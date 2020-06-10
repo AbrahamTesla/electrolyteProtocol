@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electrolyte Protocol</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title" class="mt-4 mb-4">Electrolyte Protocol</h1>
+
+      <!-- Creatinine Form -->
+      <form id="creatinineForm">
+        <div class="form-group">
+          <label for="creatinine">Creatinine:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="creatinine"
+            placeholder="enter creatinine level"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary mb-4">Submit</button>
+      </form>
+
+      <!-- Output the messages -->
+      <div id="message"></div>
+      <div id="creatinineLevel"></div>
+
+      <!-- Electrolyte Form -->
+      <form id="protocolForm">
+        <div class="form-group">
+          <label for="potassium">Potassium:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="potassium"
+            placeholder="enter potassium level"
+          />
+        </div>
+        <div class="form-group">
+          <label for="calcium">Calcium:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="calcium"
+            placeholder="enter calcium level"
+          />
+        </div>
+        <div class="form-group">
+          <label for="magnesium">Magnesium:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="magnesium"
+            placeholder="enter magnesium level"
+          />
+        </div>
+        <div class="form-group">
+          <label for="phosphate">Phosphate:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="phosphate"
+            placeholder="enter phosphate level"
+          />
+        </div>
+        <button class="btn btn-secondary mb-4" type="submit">
+          Submit Values
+        </button>
+      </form>
+      <div class="row mb-4" id="outputPotassium"></div>
+      <div class="row mb-4" id="outputCalcium"></div>
+      <div class="row mb-4" id="outputMagnesium"></div>
+      <div class="row mb-4" id="outputPhosphate"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
