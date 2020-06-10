@@ -181,8 +181,7 @@ function getCalciumValue() {
       </div>`);
       break;
     case ca > 1.5 && ca <= 2:
-      return;
-      outputCalcium.innerHTML = `
+      return (outputCalcium.innerHTML = `
       <h3 class="ml-4 mr-4">Mg: ${mg}</h3>
       <div>
           <div class="card" style="width: 18rem;">
@@ -191,7 +190,7 @@ function getCalciumValue() {
                   <p class="card-text">Infuse KCL IV 20mmol, repeat bloodwork in 24hrs</p>  
               </div>
           </div>
-      </div>`;
+      </div>`);
       break;
     case ca <= 1.5:
       return (outputCalcium.innerHTML = `<h3 class="ml-4 mr-4">Ca: ${ca}</h3>
